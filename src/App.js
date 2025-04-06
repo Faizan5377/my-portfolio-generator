@@ -1,4 +1,3 @@
-// App.js - Main component that manages routing and state
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DataEntryPage from './components/DataEntryPage';

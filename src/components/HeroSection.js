@@ -1,4 +1,3 @@
-// components/HeroSection.js
 import React from 'react';
 import '../styles/HeroSection.css';
 
