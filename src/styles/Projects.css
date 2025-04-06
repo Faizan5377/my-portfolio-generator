@@ -1,0 +1,67 @@
+/* Projects.css */
+.projects-section {
+  padding: 5rem 1rem;
+  background-color: var(--card-background);
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.drag-instruction {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  min-height: 300px; /* Ensure grid has height even when empty */
+}
+
+.project-draggable {
+  /* Make the draggable container adjust to its content */
+  height: 100%;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.loading, .error, .projects-empty {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+.projects-empty {
+  color: var(--secondary-color);
+  grid-column: 1 / -1;
+}
+
+/* Add styles for when dragging */
+.dragging {
+  opacity: 0.5;
+  background-color: var(--card-background);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* This will help make sure the grid spaces remain during drag */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

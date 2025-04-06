@@ -1,0 +1,44 @@
+/* Contact.css */
+.contact-section {
+    padding: 5rem 1rem;
+    background-color: var(--background-color);
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+  
+  .contact-form {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+  }
+  
+  .success-message {
+    background-color: #81c784;
+    color: #1b5e20;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .error-message {
+    background-color: #e57373;
+    color: #b71c1c;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }

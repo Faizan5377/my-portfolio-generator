@@ -1,0 +1,9 @@
+/* Portfolio.css */
+.portfolio {
+    min-height: 100vh;
+    transition: background-color var(--transition-speed);
+  }
+  
+  main {
+    padding-top: 60px; /* Space for fixed navbar */
+  }

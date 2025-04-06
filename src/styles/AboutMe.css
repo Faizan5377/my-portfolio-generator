@@ -1,0 +1,85 @@
+/* AboutMe.css */
+.about-section {
+    padding: 5rem 1rem;
+    background-color: var(--background-color);
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-image {
+    flex: 0 0 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow-color);
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-speed);
+  }
+  
+  .profile-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text p {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  
+  .skills-interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .skills, .interests {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .skills h3, .interests h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .skills ul, .interests ul {
+    list-style: none;
+  }
+  
+  .skills li, .interests li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .skills li:before, .interests li:before {
+    content: "•";
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }

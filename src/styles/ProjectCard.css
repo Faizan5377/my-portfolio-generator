@@ -1,0 +1,58 @@
+/* ProjectCard.css */
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    cursor: grab;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  .project-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  .project-info {
+    padding: 1.5rem;
+  }
+  
+  .project-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+  }
+  
+  .project-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .github-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .github-link:hover {
+    background-color: #389995;
+  }

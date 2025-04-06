@@ -1,0 +1,44 @@
+/* App.css - Global styles */
+:root {
+  --primary-color: #43B3AE; /* Teal */
+  --secondary-color: #FFCBA4; /* Peach */
+  --text-color: #333;
+  --light-text: #fff;
+  --background-color: #f9f9f9;
+  --card-background: #fff;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+/* Dark mode colors */
+.dark-mode {
+  --text-color: #f0f0f0;
+  --background-color: #121212;
+  --card-background: #242424;
+  --border-color: #444;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  cursor: pointer;
+}
